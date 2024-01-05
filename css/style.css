@@ -1,0 +1,464 @@
+@importar url(' https://fonts.cdnfonts.com/css/calculator ');
+
+body {
+    background: linear-gradient(to right, rgba(255, 165, 0, 1), rgba(255, 0, 0, 1));
+}
+
+.calculadora {
+    width: 25%;
+    height: 80%;
+    background-color: #ddd;
+    border-radius: 25px;
+    box-shadow:  10px 10px 10px black;
+    position: absolute;
+    left: 37.5%;
+    bottom: 11%;
+}
+
+.resultado {
+    width: 90%;
+    height: 20%;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    left: 5%;
+    font-family: 'Calculator', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250%;
+}
+
+.resultado.texto-longo {
+    font-size: 80%;
+}
+
+.resultado {
+    width: 90%;
+    height: 20%;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    left: 5%;
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.resultado.texto-longo {
+    font-size: 80%;
+}
+
+
+
+#CE {
+    background-color: gray;;
+    border: none;
+    position: absolute;
+    bottom: 55%;
+    left: 5%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: white;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#CE:hover{
+    cursor: pointer;
+}
+#CE:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#zero {
+    background-color: white;
+    border: none;
+    position: absolute;
+    bottom: 55%;
+    left: 28%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: black;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#zero:hover{
+    cursor: pointer;
+}
+#zero:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#divisao {
+    background-color: gray;;
+    border: none;
+    position: absolute;
+    bottom: 55%;
+    left: 52%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: white;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#divisao:hover{
+    cursor: pointer;
+}
+#divisao:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+#X {
+    background-color: gray;;
+    border: none;
+    position: absolute;
+    bottom: 55%;
+    left: 75%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: white;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#X:hover{
+    cursor: pointer;
+}
+#X:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#menos {
+    background-color: gray;;
+    border: none;
+    position: absolute;
+    bottom: 38%;
+    left: 75%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: white;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#menos:hover{
+    cursor: pointer;
+}
+#menos:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#mais {
+    background-color: gray;;
+    border: none;
+    position: absolute;
+    bottom: 21%;
+    left: 75%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: white;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#mais:hover{
+    cursor: pointer;
+}
+#mais:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#igual {
+    background-color: #f1af09;
+    border: none;
+    position: absolute;
+    bottom: 4%;
+    left: 75%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: white;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#igual:hover{
+    cursor: pointer;
+}
+#igual:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#um {
+    background-color: white;
+    border: none;
+    position: absolute;
+    bottom: 4%;
+    left: 5%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: black;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#um:hover{
+    cursor: pointer;
+}
+#um:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#dois {
+    background-color: white;
+    border: none;
+    position: absolute;
+    bottom: 4%;
+    left: 28%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: black;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#dois:hover{
+    cursor: pointer;
+}
+#dois:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#tres {
+    background-color: white;
+    border: none;
+    position: absolute;
+    bottom: 4%;
+    left: 52%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: black;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#tres:hover{
+    cursor: pointer;
+}
+#tres:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#quatro {
+    background-color: white;
+    border: none;
+    position: absolute;
+    bottom: 21%;
+    left: 5%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: black;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#quatro:hover{
+    cursor: pointer;
+}
+#quatro:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#cinco {
+    background-color: white;
+    border: none;
+    position: absolute;
+    bottom: 21%;
+    left: 28%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: black;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#cinco:hover{
+    cursor: pointer;
+}
+#cinco:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#seis {
+    background-color: white;
+    border: none;
+    position: absolute;
+    bottom: 21%;
+    left: 52%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: black;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#seis:hover{
+    cursor: pointer;
+}
+#seis:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#sete {
+    background-color: white;
+    border: none;
+    position: absolute;
+    bottom: 38%;
+    left: 5%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: black;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#sete:hover{
+    cursor: pointer;
+}
+#sete:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#oito {
+    background-color: white;
+    border: none;
+    position: absolute;
+    bottom: 38%;
+    left: 28%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: black;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#oito:hover{
+    cursor: pointer;
+}
+#oito:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+#nove {
+    background-color: white;
+    border: none;
+    position: absolute;
+    bottom: 38%;
+    left: 52%;
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 300%;
+    color: black;
+    font-family: 'Calculator', sans-serif;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px black;
+}
+
+#nove:hover{
+    cursor: pointer;
+}
+#nove:active{
+    background-color: white;
+    color: black;
+    box-shadow: inset 4px 4px 5px black;
+}
+
+
+
+
+
+
+
+
