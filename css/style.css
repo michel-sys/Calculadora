@@ -2,6 +2,7 @@
 
 body {
     background: linear-gradient(to right, rgba(255, 165, 0, 1), rgba(255, 0, 0, 1));
+    user-select: none;
 }
 
 .calculadora {
